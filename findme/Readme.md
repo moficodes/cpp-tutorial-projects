@@ -1,4 +1,4 @@
-#Simple Game of Finding the Computer Position
+# Simple Game of Finding the Computer Position
 
 The Rule of the game is very simple.
 
@@ -6,11 +6,13 @@ User is given a choice to create the size of grid. They can then move using a,s,
 
 *This is a very very basic version of the popular board game Scotland Yard.*
 
-##Usage
+## Usage
 
-```g++ main.cpp
-./a.out```
+```
+g++ main.cpp
+./a.out
+```
 
-##Future Improvements
+## Future Improvements
 
 Add more features to the game similar to the actual board game

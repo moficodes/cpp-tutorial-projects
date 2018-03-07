@@ -3,5 +3,7 @@ Computer selects a random word from the choice of 800+ words. User has 8 failure
 
 ##Usage
 
-```g++ --std=c++0x main.cpp
-./a.out```
+```
+g++ --std=c++0x main.cpp
+./a.out
+```

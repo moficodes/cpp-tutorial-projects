@@ -1,9 +1,11 @@
-#Guess the Number
+# Guess the Number
 Computer randomly chooses a number.
 
 User has certain number of tries to guess the number.
 
-##Usage
+## Usage
 
-```g++ main.cpp
-./a.out```
+```
+g++ main.cpp
+./a.out
+```
