@@ -114,7 +114,7 @@ void hangman(vector<string> words){
 
 int main() {
     srand(time(0));
-    string fileName = "../words.txt";
+    string fileName = "resources/words.txt";
 
     vector<string> words = readFile(fileName);
 

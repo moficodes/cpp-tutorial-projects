@@ -63,6 +63,17 @@ int main(){
         break;
     }
 
+    move(map, playerPosX, playerPosY, computerPosX, computerPosY);
+
+    if(playerPosX == computerPosX && playerPosY == computerPosY){
+      clearMap(map);
+      map[playerPosX][playerPosY] = 2;
+      show = false;
+      printMap(map, show);
+      cout<<"Your found me "<<endl;
+      break;
+    }
+
     int compMove = rand()%4+1;
 
     switch (compMove) {
@@ -78,17 +89,6 @@ int main(){
       case 4:
         computerPosX = (computerPosX + grid + 1)%grid;
         break;
-    }
-
-    move(map, playerPosX, playerPosY, computerPosX, computerPosY);
-
-    if(playerPosX == computerPosX && playerPosY == computerPosY){
-      clearMap(map);
-      map[playerPosX][playerPosY] = 2;
-      show = false;
-      printMap(map, show);
-      cout<<"Your found me "<<endl;
-      break;
     }
     printMap(map, show);
   }
