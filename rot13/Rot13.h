@@ -14,6 +14,7 @@ class Rot13 {
     Rot13( const string& );
     ~Rot13();
     string getMessage() const;
+    string getEncoded();
     void setMessage( string );
     void encode( string );
   private:

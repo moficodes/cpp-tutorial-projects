@@ -34,6 +34,11 @@ string Rot13::getMessage() const {
   return message;
 }
 
+string Rot13::getEncoded() {
+  encode(message);
+  return cipher;
+}
+
 void Rot13::encode(string m) {
   // cout<<m<<endl;
   for(int i = 0; i<m.size(); i++){
