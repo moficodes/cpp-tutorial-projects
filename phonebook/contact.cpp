@@ -3,62 +3,62 @@
 
 using namespace std;
 
-contact::contact() {
+Contact::Contact() {
   //Empty Constructor
 }
 
-contact::contact(const string &name, const string &number) {
+Contact::Contact(const string &name, const string &number) {
   setName( name );
   setNumber ( number );
 }
 
-contact::contact(const string &fName, const string &lName, const string &number) {
+Contact::Contact(const string &fName, const string &lName, const string &number) {
   string name = lName + ", " + fName;
   setName( name );
   setNumber ( number );
 }
 
-contact::~contact() {
+Contact::~Contact() {
   //Empty Destructor
 }
 
-string contact::getName() const {
+string Contact::getName() const {
   return name;
 }
 
-string contact::getNumber() const {
+string Contact::getNumber() const {
   return number;
 }
 
-string contact::getAddress() const {
+string Contact::getAddress() const {
   return address;
 }
 
-string contact::getEmail() const {
+string Contact::getEmail() const {
   return email;
 }
 
-contact &contact::setName( const string &name) {
+Contact &Contact::setName( const string &name) {
   this->name = name;
   return *this;
 }
 
-contact &contact::setNumber( const string &number ) {
+Contact &Contact::setNumber( const string &number ) {
   this->number = number;
   return *this;
 }
 
-contact &contact::setAddress( const string &address ) {
+Contact &Contact::setAddress( const string &address ) {
   this->address = address;
   return *this;
 }
 
-contact &contact::setEmail( const string &email ) {
+Contact &Contact::setEmail( const string &email ) {
   this->email = email;
   return *this;
 }
 
-string contact::toString () const {
+string Contact::toString () const {
   return "Name \t\t: "+this->name+"\nNumber \t\t: "+this->number+\
   "\nEmail \t\t: "+this->email+"\nAddress \t: "+this->address+"\n";
 }

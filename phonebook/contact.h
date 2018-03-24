@@ -5,22 +5,22 @@ using namespace std;
 #ifndef CONTACT_H
 #define CONTACT_H
 
-class contact {
+class Contact {
   public:
-    contact();
-    contact( const string& , const string& );
-    contact( const string& , const string& , const string& );
-    ~contact();
+    Contact();
+    Contact( const string& , const string& );
+    Contact( const string& , const string& , const string& );
+    ~Contact();
 
     string getName() const;
     string getNumber() const;
     string getAddress() const;
     string getEmail() const;
 
-    contact &setName( const string& );
-    contact &setNumber( const string& );
-    contact &setAddress( const string& );
-    contact &setEmail( const string& );
+    Contact &setName( const string& );
+    Contact &setNumber( const string& );
+    Contact &setAddress( const string& );
+    Contact &setEmail( const string& );
 
     string toString() const;
   private:
